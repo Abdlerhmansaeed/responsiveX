@@ -214,6 +214,26 @@ class R {
   static Size get screenSize => _r.screenSize;
   static EdgeInsets get safeArea => _r.safeArea;
 
+  // New device orientation checks
+  static bool get isMobileLandscape => _r.isMobileLandscape;
+  static bool get isMobilePortrait => _r.isMobilePortrait;
+  static bool get isTabletLandscape => _r.isTabletLandscape;
+  static bool get isTabletPortrait => _r.isTabletPortrait;
+  static bool get isDesktopLandscape => _r.isDesktopLandscape;
+
+  // Additional metrics
+  static EdgeInsets get viewPadding => _r.viewPadding;
+  static EdgeInsets get viewInsets => _r.viewInsets;
+  static double get textScale => _r.textScaleFactor;
+  static double get devicePixelRatio => _r.devicePixelRatio;
+  static Orientation get orientation => _r.orientation;
+
+  // Keyboard and safe area helpers
+  static bool get isKeyboardVisible => _r.isKeyboardVisible;
+  static double get availableHeight => _r.availableHeight;
+  static double get safeScreenWidth => _r.safeScreenWidth;
+  static double get safeScreenHeight => _r.safeScreenHeight;
+
   // =================== GRID & LAYOUT ===================
 
   /// Get number of columns for grid based on screen size
